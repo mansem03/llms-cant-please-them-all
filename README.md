@@ -1,6 +1,6 @@
 # LLM Judge Disagreement Project
 
-## 📌 Problem Description
+##  Problem Description
 This project aims to generate essays that maximize disagreement among multiple Large Language Model (LLM) judges.
 
 Different LLMs have different biases such as:
@@ -16,7 +16,7 @@ This project exploits these biases by generating essays with:
 
 ---
 
-## 📊 Dataset Overview
+##  Dataset Overview
 The dataset consists of essay topics from a Kaggle competition.
 
 Each topic is used to generate an essay using a language model.
@@ -26,7 +26,7 @@ Example:
 
 ---
 
-## 📏 Evaluation Metric
+##  Evaluation Metric
 The evaluation is based on disagreement between multiple LLM judges.
 
 We compute:
@@ -39,7 +39,7 @@ Higher disagreement (variance) = better performance.
 
 ---
 
-## ⚙️ Pipeline
+##  Pipeline
 1. Load dataset (topics)
 2. Generate essay using LLM
 3. Apply different writing styles:
@@ -51,7 +51,7 @@ Higher disagreement (variance) = better performance.
 
 ---
 
-## 📈 Baseline Results
+##  Baseline Results
 Example scores:
 
 - Essay 1: 22.94  
@@ -65,7 +65,7 @@ Example scores:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 - notebooks/ → EDA and model notebooks
 - data/ → dataset description
 - results/ → performance results
@@ -73,5 +73,3 @@ Example scores:
 
 ---
 
-## ⚠️ Note
-LLM judges are simulated using random scoring for baseline purposes. Future work can include real LLM evaluation.
