@@ -1,51 +1,48 @@
 # LLM Judge Disagreement Project
 
 ## 📌 Problem Description
-This project aims to generate essays that maximize disagreement among multiple LLM judges.
+This project aims to generate essays that maximize disagreement among multiple Large Language Model (LLM) judges.
 
 Different LLMs have different biases such as:
 - Preference for formal vs informal writing
-- Sensitivity to ethical issues
+- Sensitivity to ethical arguments
 - Differences in logical reasoning
 
-We exploit these biases by generating essays with:
-- Contradictions
+This project exploits these biases by generating essays with:
+- Contradictory arguments
 - Mixed writing styles
-- Ambiguous arguments
-- Ethical grey areas
+- Ethical ambiguity
+- Abstract and philosophical ideas
 
 ---
 
 ## 📊 Dataset Overview
-Dataset from Kaggle:
-- Input: Essay topics
-- Output: Generated essays
+The dataset consists of essay topics from a Kaggle competition.
+
+Each topic is used to generate an essay using a language model.
 
 Example:
-- "Discuss the role of self-reliance in software engineering"
+- "Discuss the role of self-reliance in achieving success in software engineering"
 
 ---
 
 ## 📏 Evaluation Metric
+The evaluation is based on disagreement between multiple LLM judges.
 
-We simulate LLM judges and compute:
-
+We compute:
 - Average Quality Score
-- Horizontal Standard Deviation (between judges)
-- Vertical Standard Deviation (within essay)
+- Horizontal Standard Deviation (difference between judges)
+- Vertical Standard Deviation (variation across sections)
 - Engagement Score
 
-Final Score Formula:
-
-Higher disagreement (variance) = better score
+Higher disagreement (variance) = better performance.
 
 ---
 
 ## ⚙️ Pipeline
-
 1. Load dataset (topics)
-2. Generate essay using LLM (Gemma 2B/gpt-2)
-3. Apply different writing strategies:
+2. Generate essay using LLM
+3. Apply different writing styles:
    - Philosophical
    - Metaphorical
    - Dialectical
@@ -54,21 +51,27 @@ Higher disagreement (variance) = better score
 
 ---
 
-## 📈 Baseline Performance
+## 📈 Baseline Results
+Example scores:
 
-Example Result:
-- Avg Quality: 3.87
-- Disagreement Score: 22.94
+- Essay 1: 22.94  
+- Essay 2: 11.34  
+- Essay 3: 7.58  
 
-Observation:
-- Contradictory essays produce higher disagreement
-- Ethical ambiguity increases variance
+### Key Observations:
+- Contradictory essays increase disagreement
+- Ethical ambiguity confuses LLM judges
+- Mixed writing styles produce higher variance
 
 ---
 
 ## 📁 Project Structure
+- notebooks/ → EDA and model notebooks
+- data/ → dataset description
+- results/ → performance results
+- docs/ → methodology explanation
 
-- notebooks/ → EDA & model
-- data/ → dataset explanation
-- results/ → performance
-- docs/ → methodology
+---
+
+## ⚠️ Note
+LLM judges are simulated using random scoring for baseline purposes. Future work can include real LLM evaluation.
