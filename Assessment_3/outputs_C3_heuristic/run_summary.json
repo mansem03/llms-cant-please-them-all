@@ -1,0 +1,10 @@
+{
+  "datetime": "2026-06-19T22:22:35",
+  "judge_provider": "heuristic",
+  "n_candidates_per_topic": 3,
+  "num_topics": 1,
+  "num_judgements": 12,
+  "average_selected_objective": 3.7957131629638265,
+  "average_selected_mean_score": 8.0325,
+  "average_selected_disagreement_range": 1.7999999999999998
+}

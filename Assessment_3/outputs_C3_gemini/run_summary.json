@@ -1,0 +1,10 @@
+{
+  "datetime": "2026-06-19T22:58:35",
+  "judge_provider": "gemini",
+  "n_candidates_per_topic": 3,
+  "num_topics": 1,
+  "num_judgements": 12,
+  "average_selected_objective": 7.692455639676584,
+  "average_selected_mean_score": 3.75,
+  "average_selected_disagreement_range": 6.0
+}
